@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#! /bin/bash
 
 ##########
 # nench.sh ("new bench.sh")
@@ -135,9 +135,8 @@ printf '\n'
 
 if ! command_exists ioping
 then
-    curl -s --max-time 10 -o ioping.static http://wget.racing/ioping.static
-    chmod +x ioping.static
-    ioping_cmd="./ioping.static"
+    printf '%s\n' 'This script requires ioping, but it could not be found.' 1>&2
+    exit 1
 else
     ioping_cmd="ioping"
 fi

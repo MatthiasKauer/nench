@@ -1,6 +1,13 @@
 nench.sh ("new bench.sh")
 =========================
 
+**I only forked so I can audit what this tool is doing.**
+My new usage
+------------
+```
+curl -s https://raw.githubusercontent.com/MatthiasKauer/nench/master/nench.sh | bash
+```
+
 Current version always available at https://github.com/n-st/nench
 
 IPv4- and v6-enabled download at http://wget.racing/nench.sh
